@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald&display=swap");
+
+
+html, 
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Nunito", serif;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+/*
+* Menu
+*/
+
+nav {
+    background-color: #1B262C;
+    color: #FFF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+    margin-right: -50%;  
+    word-spacing: 0px;
+}
+.menu ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+.menu ul > li > a:hover {
+    text-decoration: none;
+    color: #3b5999;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.logo > img{
+    height: 70px;
+    position: absolute;
+    left: 50px;
+    margin-right: 700px;
+
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+    float: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-right: 700px;
+    
+}
+
+/*
+* Jumbotron
+*/
+header {
+    background: url("../assets/background\ jumbotron.jpeg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #000;
+}
+.header-opacity{
+    background-color: #1B262C;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-jumbotron { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+
+}
+.header-jumbotron > h4 {
+    color: #FFF;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+.header-jumbotron > h5 {
+    color: #FFF;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+.header-jumbotron a{
+    text-decoration: none;
+    color: #FFF;
+}
+.header-jumbotron a:hover{
+    color: #3b5999;
+}
+
+/*
+* Tentang saya
+*/
+#tentang-saya {
+    background-color: #EEEEEE;
+    color: #333;
+}
+#tentang-saya > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+#tentang-saya > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+}
+
+#tentang-saya > .wrapper > p1 {
+    text-align: center;
+    margin: 0px;
+    font-size: 32px;
+    padding: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+table {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+/*
+* Kontak
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.kontak {
+    min-height: 100vh;
+    background-color: #e8f0fe;
+    padding: 50px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container > h4 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+}
+.kontak-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.kontak-form {
+    text-align: left;
+}
+.kontak-form > h3{
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #333;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: #45a049;
+}
+.kontak-info {
+    text-align: left;
+}
+.kontak-info > h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+.kontak-info > p {
+    margin-bottom: 10px;
+    color: #555;
+}
+.kontak-info > i {
+    color: #4caf50;
+    margin-right: 10px;
+}
+
+/*
+* Kontak
+*/
+#project {
+    background-color: #EEEEEE;
+    color: #333;
+}
+#project > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+#project > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+}
+.container ol{
+    text-align: left;
+    font-size: 24px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+/*Saya Alfan Fadillah Ramadhan, saya merupakan lulusan Sekolah Menegah Atas (SMA) Jurusan Matematika dan Ilmu Pengetahuan Alam,
+dan sekarang melanjutkan pendidikan di Global Institute (Tangerang, Banten) Semester 2 jurusan Teknik Informatika.
+Saya berambisi menjadi seorang Web Development. Saya berambisi untuk mengembangkan skill saya di bidang Informatika, dan saya percaya saya bisa.
+Selain itu saya juga memiliki hobby di bidang Olahraga dan Seni, Dalam olahraga saya suka bermain berbagai cabang olahraga, contohnya saya senang
+bermain Badminton dan Futsal, dengan itu saya merasa memiliki kebugaran yang baik. Dan untuk bidang Seni saya suka bermain alat musik,
+dengan bermain musik saya memiliki rasa penasaran yang tinggi dan berusaha untuk memecahkannya*/
